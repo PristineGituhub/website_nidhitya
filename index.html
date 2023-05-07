@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html xmlns:th ="https://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+
+<title>NIDHITYA ENTERPRISES</title>
+     <link rel = "icon" href = "/image/Stamp.PNG" type = "image/x-icon">
+<link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+	crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+<style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  p {
+   margin-left:5em;
+   margin-right:3em;
+  }
+/*      
+ .gradient-custom {
+  background: radial-gradient(50% 123.47% at 50% 50%, #00ff94 0%, #720059 100%),
+    linear-gradient(121.28deg, #669600 0%, #ff0000 100%),
+    linear-gradient(360deg, #0029ff 0%, #8fff00 100%),
+    radial-gradient(100% 164.72% at 100% 100%, #6100ff 0%, #00ff57 100%),
+    radial-gradient(100% 148.07% at 0% 0%, #fff500 0%, #51d500 100%);
+  background-blend-mode: screen, color-dodge, overlay, difference, normal;
+}
+.carousel-indicators {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+} */
+.card {
+  border-radius: .7rem;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+</style>
+
+    <!-- Bootstrap -->
+ <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> 
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+
+</head>
+<body>
+
+      <!--top navbar starts-->
+      <!-- <nav class="top-bar py-4 bg-secondary navbar-dark"> -->
+      <nav class="top-bar py-4 navbar-expand-lg navbar-light bg-light">
+       <div class="container">
+        <div class="row">
+        <div class="col-sm-8 hidden-xs">
+            <span class="nav-text">
+                <i class="fa fa-phone" aria-hidden="true"></i>  +91-9820032226 
+                <i class="fa fa-phone" aria-hidden="true">+91-8433542496</i>
+                <i class="fa fa-envelope top-massage" aria-hidden="true"></i>enterprisesnidhitya@gmail.com</span>
+            </div>
+           
+       <div class="col-sm-4 text-right">
+            <a href="#" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" class="social"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            <a href="#" class="social"><i class="fa fa-google" aria-hidden="true"></i></a>
+            
+            <a href="#" class="social"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+            </div>
+        </div>
+      </div>
+    </nav>   <!--TOP-NAVBAR-END-->
+    
+<br>
+<!--====================== NAVBAR MENU START===================-->
+    <div class="bg-nav">
+   <div class="container">
+     <div class="row">
+        <div class="col-sm-2">
+           <a class="navbar-brand" th:href="@{/home}">
+           <img src="image/Stamp.PNG" width="100" height="100">
+           </a>
+        </div>
+        <div class="col-sm-10">
+       <!-- <nav class="navbar py-4 navbar-expand-md bg-info navbar-dark">  -->
+       <nav class="navbar py-4 navbar-expand-lg navbar-light bg-light">
+     <!-- Brand -->
+  <a class="navbar-brand" th:href="@{/home}">Home</a>
+
+  <!-- Toggler/collapsible Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <!-- Navbar links -->
+
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" th:href="@{/aboutus}">About Us</a>
+       </li>
+      </ul>
+  </div>
+    
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" th:href="@{/products}">Products</a>
+	       </li>
+	      </ul>
+	  </div>
+<!-- 	  	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="/image/Stamp.PNG">FAQ</a>
+	         <a class="nav-link" href="image/test.pdf" target="_blank">
+	         <span><i class="fa fa-file-pdf" style="font-weight:bold"></i> Catalogue</span></a>
+	       </li>
+	      </ul>
+	  </div> -->
+	  
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" th:href="@{/contact/new}">Contact Us</a>
+	      </li>
+	      </ul>
+	  </div>
+
+</nav>
+        </div>
+     </div>
+   </div>
+</div>
+
+<!--====================== NAVBAR MENU ENDS===================-->  
+<br><br>
+
+
+<!--====================== CAROUSEL STARTS===================-->  
+<div class="col-sm-6 col-md-12 col-xs-4">
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+    <li data-target="#demo" data-slide-to="5"></li>
+    <li data-target="#demo" data-slide-to="6"></li>
+    <li data-target="#demo" data-slide-to="7"></li>
+    <li data-target="#demo" data-slide-to="8"></li>
+    <li data-target="#demo" data-slide-to="9"></li>
+    <li data-target="#demo" data-slide-to="10"></li>
+    <li data-target="#demo" data-slide-to="11"></li>
+  </ul>
+  
+  <!-- The slide show -->
+  <div class="carousel-inner">
+   <div class="carousel-item active">
+      <img src="image/gallery/pic6.jpg" alt="NoteBooks" width="1300" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="image/gallery/pic1.jpg" alt="Dairy" width="1300" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="image/gallery/NoteBooksNew1.jpg" alt="Dairy" width="1300" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="image/gallery/pic2.jpg" alt="Dairy" width="1300" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="image/gallery/note.jpg" alt="Note-books" width="1300" height="500">
+    </div>
+     <div class="carousel-item">
+      <img src="image/gallery/BagNew1.jpg" alt="Bags" width="1300" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="image/gallery/bellt-badge.jpg" alt="Belt Badge" width="1300" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="image/gallery/pic4.jpg" alt="Drawing" width="1300" height="500">
+    </div>
+     <div class="carousel-item">
+      <img src="image/gallery/Tie1.jpg" alt="New Tie" width="1300" height="500">
+    </div>
+     <div class="carousel-item">
+      <img src="image/gallery/pic5.jpg" alt="New Tie" width="1300" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="image/gallery/pic7.jpg" alt="new Drawing" width="1300" height="500">
+    </div>
+     <div class="carousel-item">
+      <img src="image/gallery/pic3.jpg" alt="new Drawing" width="1300" height="500">
+    </div>
+    
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a> 
+</div>
+</div>
+<!--====================== CAROUSEL ENDS===================--> 
+<br>
+<!-- welcome -->
+ <div class="container">
+   <div class="row">
+     <div class="col-sm-6 col-md-12 col-xs-12">
+       <div class="shri-line">
+         <h3 class = "text-center" style="color:blue;"> One stop for all your needs</h3>
+				<p>
+				Welcome to Nidhitya, your one-stop for all your school needs! We understand that finding the right products can be a daunting task. That's why we have made it
+				our mission to offer a wide variety of quality school supplies at affordable prices, all in one convenient place. Enhanced with 40+ years of industry
+				experience and with 200+ customers we are the leading supplier of school supplies. 
+				</p>
+				<p>
+				Whether you're looking for <b><i>notebooks, backpacks, diary, drawing books, technology tools or any other educational supply</i></b>, 
+				we have everything you need to create an engaging and effective learning environment. We take pride in the quality of 
+				our products, and we stand behind every item that we sell. We believe that education is the foundation of a successful future, 
+				and we are honored to play a small role in helping students reach their full potential.
+				</p>
+ 				<p>
+ 				At Nidhitya, we believe that education is the key to a better future, and we are committed to helping students succeed. 
+				That's why we offer discounts to schools and educators, as well as free shipping.
+ 				</p>
+ 				<p>
+ 				We pride ourselves on providing excellent customer service, so if you have any questions or concerns, 
+				please don't hesitate to contact us. We are always happy to help.
+ 				</p>
+ 				<p>
+ 				Thank you for choosing Nidhitya as your school supply provider. We look forward to helping you make this school year the best one yet!
+ 				</p> 			
+       </div>
+     </div>
+   </div>
+ </div>
+<!-- welcome-end -->
+
+ <!-- Testmony Starts -->
+ <section style="color: #000; background-color: #f3f2f2;">
+  <div class="container py-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-xl-8 text-center">
+        <h3 class="fw-bold mb-4">Testimonials</h3>
+        <h5 class="mb-4 pb-2 mb-md-5 pb-md-0"> Let our Partners Speaks for us</h5>
+            <p class="mb-2">
+              We are assosiated with Nidhitya since 10 years, they provide high-quality products, excellent customer service. 
+              The products are up-to-date and best to current curriculums and teaching methods. 
+            </p>
+              <h5>Sister Teresa May</h5>
+            <h6>ST. MARY'S SCHOOL, Mon Town, Nagaland</h6>
+       </div>
+       
+    </div>
+    <!-- commenting this for future use, once we get the required details of all the contacts
+    <div class="row text-center">
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+            </div>
+            <h5 class="font-weight-bold">Sister Teresa May</h5>
+            <h6 class="font-weight-bold my-3">ST. MARY'S SCHOOL, Mon Town, Nagaland</h6>
+            <p class="mb-2">
+              We are assosiated with Nidhitya since 10 years, they provide high-quality products, excellent customer service. 
+              The products are up-to-date and best to current curriculums and teaching methods. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="card">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(15).webp"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+            </div>
+            <h5 class="font-weight-bold">Maggie McLoan</h5>
+            <h6 class="font-weight-bold my-3">Photographer at Studio LA</h6>
+            <p class="mb-2">
+              Autem, totam debitis suscipit saepe
+              sapiente magnam officiis quaerat necessitatibus odio assumenda perferendis
+              labore laboriosam.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-0">
+        <div class="card">
+          <div class="card-body py-4 mt-2">
+            <div class="d-flex justify-content-center mb-4">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+            </div>
+            <h5 class="font-weight-bold">Alexa Horwitz</h5>
+            <h6 class="font-weight-bold my-3">Front-end Developer in NY</h6>
+             <p class="mb-2">
+              Cras sit amet nibh libero, in gravida
+              nulla metus scelerisque ante sollicitudin commodo cras purus odio,
+              vestibulum in 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>  -->
+  </div>
+</section>
+ 
+ <!-- Testmony Ends -->
+  
+<!-- ############FOOTER STARTS ############################ -->
+
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #0096FF">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="mt-5">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="/aboutus" class="text-white">About us</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="/products" class="text-white">Products</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#" class="text-white">Awards</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#" class="text-white">FAQ</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="/contact/new" class="text-white">Contact</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-5" />
+
+      <!-- Section: Text -->
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p>
+              Nidhitya Enterprises has been serving hundreds of schools and their students since 40+ years 
+              with educational supplies that meet the highest standards of excellence. </p>
+              <p>
+              Today, as one of the well-known firm, we are committed to delivering innovative products of inestimable value to 
+              young learners and educational institutions alike.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Text -->
+   	
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2023 Copyright:
+      <a class="text-white" href="#"
+         >Nidhitya Enterprises</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+<!-- ############FOOTER ENDS ############################ -->
+    
+</body>
+</html>
